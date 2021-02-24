@@ -19,7 +19,7 @@ public class Parrot {
         case EUROPEAN:
             return getBaseSpeed();
         case AFRICAN:
-            return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+            return Math.max(0, getBaseSpeed() - 9.0 * numberOfCoconuts);
         case NORWEGIAN_BLUE:
             return (isNailed) ? 0 : getBaseSpeed(voltage);
         default:
@@ -29,10 +29,6 @@ public class Parrot {
 
     private double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * getBaseSpeed());
-    }
-
-    private double getLoadFactor() {
-        return 9.0;
     }
 
     private double getBaseSpeed() {
