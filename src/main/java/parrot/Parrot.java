@@ -15,16 +15,6 @@ package parrot;
 
 public abstract class Parrot {
 
-    protected int numberOfCoconuts;
-    protected double voltage;
-    protected boolean isNailed;
-
-    Parrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-        this.numberOfCoconuts = numberOfCoconuts;
-        this.voltage = voltage;
-        this.isNailed = isNailed;
-    }
-
     public static Parrot giveBirthToParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage,
         boolean isNailed) {
         switch (type) {
