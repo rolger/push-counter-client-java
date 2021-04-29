@@ -19,7 +19,7 @@ public abstract class Parrot {
         boolean isNailed) {
         switch (type) {
             case EUROPEAN:
-                return new EuropeanParrot(numberOfCoconuts, voltage, isNailed);
+                return new EuropeanParrot();
             case AFRICAN:
                 return new AfricanParrot(numberOfCoconuts, voltage, isNailed);
             case NORWEGIAN_BLUE:
