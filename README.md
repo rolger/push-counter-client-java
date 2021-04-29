@@ -14,3 +14,11 @@ The facilitator of the Coding Dojo will give you the detailed instructions.
 
 Copyright (c) 2021, Roland Germ. All rights reserved.
 [New BSD License](https://opensource.org/licenses/BSD-3-Clause), see `LICENSE` in repository.
+
+## Team KillSwitch
+- Balazs
+- Dejan
+- Matthias
+- Michi RP
+- Roland
+- Michi H
