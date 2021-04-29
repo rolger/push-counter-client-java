@@ -15,18 +15,32 @@ package parrot;
 
 public abstract class Parrot {
 
+
+
   public static Parrot giveBirthToParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage,
       boolean isNailed) {
     switch (type) {
       case EUROPEAN:
-        return new EuropeanParrot();
+        return createEuropeanParrot();
       case AFRICAN:
-        return new AfricanParrot(numberOfCoconuts);
+        return createAfricanParrot(numberOfCoconuts);
       case NORWEGIAN_BLUE:
-        return new NorwegianBlueParrot(voltage, isNailed);
+        return createNorwegianBlueParrot(voltage, isNailed);
       default:
         throw new RuntimeException("Should be unreachable");
     }
+  }
+
+  public static NorwegianBlueParrot createNorwegianBlueParrot(double voltage, boolean isNailed) {
+    return new NorwegianBlueParrot(voltage, isNailed);
+  }
+
+  public static AfricanParrot createAfricanParrot(int numberOfCoconuts) {
+    return new AfricanParrot(numberOfCoconuts);
+  }
+
+  public static EuropeanParrot createEuropeanParrot() {
+    return new EuropeanParrot();
   }
 
   public abstract double getSpeed();
