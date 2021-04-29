@@ -23,7 +23,7 @@ public abstract class Parrot {
             case AFRICAN:
                 return new AfricanParrot(numberOfCoconuts);
             case NORWEGIAN_BLUE:
-                return new NorwegianBlueParrot(numberOfCoconuts, voltage, isNailed);
+                return new NorwegianBlueParrot(voltage, isNailed);
             default:
                 throw new RuntimeException("Should be unreachable");
         }
