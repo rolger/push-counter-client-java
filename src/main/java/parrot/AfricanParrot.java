@@ -3,14 +3,9 @@ package parrot;
 public class AfricanParrot extends Parrot {
 
   private final int numberOfCoconuts;
-  private final double voltage;
-  private final boolean isNailed;
 
-  public AfricanParrot(int numberOfCoconuts, double voltage,
-      boolean isNailed) {
+  public AfricanParrot(int numberOfCoconuts) {
     this.numberOfCoconuts = numberOfCoconuts;
-    this.voltage = voltage;
-    this.isNailed = isNailed;
   }
 
   @Override

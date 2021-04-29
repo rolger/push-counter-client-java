@@ -21,7 +21,7 @@ public abstract class Parrot {
             case EUROPEAN:
                 return new EuropeanParrot();
             case AFRICAN:
-                return new AfricanParrot(numberOfCoconuts, voltage, isNailed);
+                return new AfricanParrot(numberOfCoconuts);
             case NORWEGIAN_BLUE:
                 return new NorwegianBlueParrot(numberOfCoconuts, voltage, isNailed);
             default:
