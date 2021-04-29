@@ -29,7 +29,16 @@ public class Parrot {
 
     public static Parrot giveBirthToParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage,
         boolean isNailed) {
-        return new Parrot(type, numberOfCoconuts, voltage, isNailed);
+        switch (type) {
+            case EUROPEAN:
+                return new EuropeanParrot(numberOfCoconuts, voltage, isNailed);
+            case AFRICAN:
+                return new AfricanParrot(numberOfCoconuts, voltage, isNailed);
+            case NORWEGIAN_BLUE:
+                return new NorwegianBlueParrot(numberOfCoconuts, voltage, isNailed);
+            default:
+                throw new RuntimeException("Should be unreachable");
+        }
     }
 
     public double getSpeed() {
