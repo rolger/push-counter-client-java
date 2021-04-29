@@ -34,8 +34,4 @@ public abstract class Parrot {
     protected double getBaseSpeed() {
     	return 12.0;
     }
-
-    protected double getLoadFactor() {
-        return 9.0;
-    }
 }
